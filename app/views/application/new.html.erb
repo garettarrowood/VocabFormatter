@@ -1,11 +1,31 @@
-<h1>Kelly's quiz formatter</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 bottom">
+      <h1 class="center">Kelly's Quiz Formatter</h1>
+    </div>
+  </div>
+</div>
 
-<h3>Copy list of vocabulary below and select options:</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      <p class="center no-bottom">List vocabulary below and select options:</p>
+      <%= render "form" %>
+    </div>
 
-<%= render "form" %>
+    <div class="col-xs-4">
+      <p class="center">Cut & Paste new list:</p>
+      <% Formatter.format.each do |word| %>
+        <%= word %><br>
+      <% end %>
+    </div>
+  </div>
+</div>
 
-<div class="result">
-  <% Formatter.format.each do |word| %>
-    <%= word %><br>
-  <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="small">&copy; Garett Arrowood. All rights reserved.</p>
+    </div>
+  </div>
 </div>
