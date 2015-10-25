@@ -23,13 +23,13 @@ class Formatter
   end
 
   def self.format
-    if @@order == "random" && @@numbered == "1"
+    if @@order == "random" && @@numbered
       return self.numberize(self.randomize)
-    elsif @@order == "random" && @@numbered == '0'
+    elsif @@order == "random" && !@@numbered
       return self.randomize
-    elsif @@order == "alpha" && @@numbered == '1'
+    elsif @@order == "alpha" && @@numbered
       return self.numberize(self.alphabetize)
-    elsif @@order == "alpha" && @@numbered == '0'
+    elsif @@order == "alpha" && !@@numbered
       return self.alphabetize
     else
       return ["You did not pick a format. Please select Random or Alphabetize."]

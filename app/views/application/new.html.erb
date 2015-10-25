@@ -5,7 +5,7 @@
 <%= render "form" %>
 
 <div class="result">
-  <%= Formatter.format.each do |word| %>
+  <% Formatter.format.each do |word| %>
     <%= word %><br>
   <% end %>
 </div>
