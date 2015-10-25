@@ -1,0 +1,13 @@
+<div class="field">
+  <%= form_tag("/format") do %>
+    <%= label_tag 'content', '' %>
+    <%= text_area_tag 'content', nil, rows: 30, cols: 80 %>
+    <%= radio_button_tag 'order', 'alpha', true %>
+    <%= label_tag 'order', "Alphabetize" %>
+    <%= radio_button_tag 'order', 'random' %>
+    <%= label_tag 'order', "Randomize" %>
+    <%= check_box_tag 'numbered' %>Numbered?
+
+    <%= submit_tag "Format this" %>
+  <% end %>
+</div>

@@ -1,0 +1,11 @@
+<h1>Kelly's quiz formatter</h1>
+
+<h3>Copy list of vocabulary below and select options:</h3>
+
+<%= render "form" %>
+
+<div class="result">
+  <%= Formatter.format.each do |word| %>
+    <%= word %><br>
+  <% end %>
+</div>
