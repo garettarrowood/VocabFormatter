@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pry'
 
 gem 'pg'
+gem 'rails_12factor'
+
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
