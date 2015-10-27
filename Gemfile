@@ -25,10 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'pry'
 
-gem 'pg'
-gem 'rails_12factor'
-
-
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
@@ -43,12 +39,15 @@ gem 'autoprefixer-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'sqlite3'
   gem 'byebug'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'pg'
+  gem 'rails_12factor'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

@@ -32,9 +32,8 @@ class Formatter
     elsif @@order == "alpha" && !@@numbered
       return self.alphabetize
     else
-      return ["You did not pick a format. Please select Random or Alphabetize."]
+      return ["", "Enter your vocab in the window to the left.", "", "Items are separated line, so be sure to press enter between each word."]
     end
   end
-
 
 end
